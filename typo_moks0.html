@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>typography</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
+  
+<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-5/css/6-2-5.css"> -->
+<link rel="stylesheet" type="text/css" href="sample.css">
+<link rel="stylesheet" type="text/css" href="sample1.css">
+<link rel="stylesheet" type="text/css" href="sample2.css">
+</head>
+
+<body>
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav">
+          <ul>
+            <li><a href="index.html">home</a></li><br>
+            <li><a href="snap.html">snap photo</a></li><br>
+            <li><a href="illustration.html">illustration</a></li><br>
+            <li><span style="color: white;">typography</span></li><br><br><br><br>
+            <li><a href="bio.html">bio</a></li><br> 
+          </ul>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+       </div>
+<div class="wrapper">
+  <div><h1 class="logo"><img src="images/typologo.jpg"></h1>
+    <ul class="nav_zero">
+      <ul class="nav_one">
+        <li class="illust_moks3"><span style="color: black;">moks0 </span></li>
+        <li class="illust_moks1"><a href="typography.html">moks1 </a></li>
+        <li class="illust_moks2"><a href="typo_moks2.html"> moks2</a> </li>
+      </ul>
+      <ul class="nav_two">
+        <li class="illust_japan"><a href="typo_moks_ja2.html">moks ja2 </a></li>
+        <!-- <li class="illust_knick_knack"><span style="color: black;"> knick Knack</span></li>
+        <li class="illust_jazz"><a href="illust_jazz.html"> jazz</a></li> -->
+      </ul>
+    </ul>
+  </div>
+  <ul class="gallery">
+    <li class="knick"><figure><img src="images/typo_moks0.jpg" alt=""><figcaption>moks0</figcaption></figure></li>
+    <li class="knick"><figure><img src="images/typo_moks0_1.jpg" alt=""><figcaption>moks0</figcaption></figure></li>
+    <li class="knick"><figure><img src="images/typo_moks0_2.jpg" alt=""><figcaption>moks0</figcaption></figure></li>
+    <li class="knick"><figure><img src="images/typo_moks0_3.jpg" alt=""><figcaption>moks0</figcaption></figure></li>
+    <li class="knick"><figure><img src="images/typo_moks0_4.jpg" alt=""><figcaption>moks0</figcaption></figure></li>
+    
+  </ul>
+  <ul class="choice-btn">
+    <li class="knick"><figure><img src="images/typo_moks0.jpg"alt=""></li>
+    <li class="knick"><figure><img src="images/typo_moks0_1.jpg" alt=""></li>
+    <li class="knick"><figure><img src="images/typo_moks0_2.jpg" alt=""></li>
+    <li class="knick"><figure><img src="images/typo_moks0_3.jpg" alt=""></li>
+    <li class="knick"><figure><img src="images/typo_moks0_4.jpg" alt=""></li>   
+  </ul>
+
+<!--/wrapper--></div>
+<!-- <script src="sample.js"></script> -->
+<script >
+    window.onload = function () {
+//  読み込みが完了したら実行したい処理を記述
+};
+var nav = document.getElementById('nav-wrapper');
+var hamburger = document.getElementById('js-hamburger');
+var blackBg = document.getElementById('js-black-bg');
+// ハンバーガーアイコンをクリックしたら
+hamburger.addEventListener('click', function () {
+nav.classList.toggle('open');
+});
+// 黒背景をクリックしたら
+blackBg.addEventListener('click', function () {
+nav.classList.remove('open');
+});
+
+  </script>
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-5/js/6-2-5.js"></script>
+</body>
+</html>

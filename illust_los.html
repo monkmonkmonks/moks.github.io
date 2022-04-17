@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>illust los</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+
+  
+<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-5/css/6-2-5.css"> -->
+<link rel="stylesheet" type="text/css" href="sample.css">
+<link rel="stylesheet" type="text/css" href="sample1.css">
+<link rel="stylesheet" type="text/css" href="sample2.css">
+
+</head>
+
+<body>
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav">
+          <ul>
+            <li><a href="index.html">home</a></li><br>
+            <li><a href="snap.html">snap photo</a></li><br>
+            <li><span style="color: white;">illustration</span></li><br>
+            
+            <li><a href="typography.html">typography</a></li><br><br><br><br>
+            <li><a href="bio.html">bio</a></li><br> 
+          </ul>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+       </div>
+<div class="wrapper">
+  <div><h1 class="logo"><img src="images/illustlogo.jpg"></h1>
+    <ul class="nav_zero">
+      <ul class="nav_one">
+        <li class="illust_metsa"><a href="illustration.html">metsa </a></li>
+        <li class="illust_los"><span style="color: black;"> Los Angeles </span></li>
+        <li class="illust_germany"><a href="illust_germany.html">Germany </a></li>
+      </ul>
+      <ul class="nav_two">
+        <li class="illust_japan"><a href="illust_japan.html">Japan </a></li>
+        <li class="illust_knick_knack"><a href="illust_knick_knack.html">knick Knack</a></li>
+        <li class="illust_jazz"><a href="illust_jazz.html"> jazz</a></li>
+      </ul>
+    </ul>
+  </div>
+  <ul class="gallery">
+   
+    <li><figure><img src="images/LA1.jpg" alt=""><figcaption>Los Angeles Lovers</figcaption></figure></li>
+    <li><figure><img src="images/LA2.jpg" alt=""><figcaption>Los Angeles Lovers</figcaption></figure></li>
+    <li><figure><img src="images/LA3.jpg" alt=""><figcaption>Old couple on the beach</figcaption></figure></li>
+    <li><figure><img src="images/LA4.jpg" alt=""><figcaption>classic car</figcaption></figure></li>
+    <li><figure><img src="images/LA5.jpg" alt=""><figcaption>Pigeons on the Pier</figcaption></figure></li>
+    <li><figure><img src="images/LA6.jpg" alt=""><figcaption>Harley-Davidson at sunset</figcaption></figure></li>
+    <li><figure><img src="images/LA7.jpg" alt=""><figcaption>Woman looking at the seaside</figcaption></figure></li>
+    
+  </ul>
+  <ul class="choice-btn">
+   
+    <li><img src="images/LA1.jpg" alt=""></li>
+    <li><img src="images/LA2.jpg" alt=""></li>
+    <li><img src="images/LA3.jpg" alt=""></li>
+    <li><img src="images/LA4.jpg" alt=""></li>
+    <li><img src="images/LA5.jpg" alt=""></li>
+    <li><img src="images/LA6.jpg" alt=""></li>
+    <li><img src="images/LA7.jpg" alt=""></li>
+   
+
+</ul>
+<!--/wrapper--></div>
+<!-- <script src="sample.js"></script> -->
+<script >
+    window.onload = function () {
+//  読み込みが完了したら実行したい処理を記述
+};
+var nav = document.getElementById('nav-wrapper');
+var hamburger = document.getElementById('js-hamburger');
+var blackBg = document.getElementById('js-black-bg');
+// ハンバーガーアイコンをクリックしたら
+hamburger.addEventListener('click', function () {
+nav.classList.toggle('open');
+});
+// 黒背景をクリックしたら
+blackBg.addEventListener('click', function () {
+nav.classList.remove('open');
+});
+
+  </script>
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-2-5/js/6-2-5.js"></script>
+</body>
+</html>
