@@ -93,8 +93,12 @@ ul{
   list-style: none;
 }
 .nav_one{
-  margin-right: 40px;
+  margin-right: 60px;
 }
+.nav_two{
+  margin-right: 60px;
+}
+
 .nav_zero{
   display: flex;
   flex-direction: row;
